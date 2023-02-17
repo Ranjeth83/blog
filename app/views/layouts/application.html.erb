@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<div id="outer">
+
+	<div id="upbg"></div>
+
+	<div id="inner">
+
+		<div id="header">
+			<h1>Article</h1>
+			<h2>have comments</h2>
+		</div>
+	
+		<div id="splash"><img src="assets/a10.jpg" align="right" style="width:100%" alt="" /></div>
+	
+		<div id="menu">
+			<ul>
+				<li class="first"><a href="#">Home</a></li>
+				<li><a href="#">Archives</a></li>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+		<div id="date">February 13, 2023</div>
+		</div>
+	
+
+		<div id="primarycontent">
+		
+			<!-- primary content start -->
+		
+			<div class="post">
+				<div class="header">
+					<h3>One article<sup>1.0</sup>have different comments </h3>
+					<div class="date">Feb 13, 2023</div>
+				</div>
+				<div class="content">
+				    <%= yield %>
+				</div>			
+			</div>
+		</div>
+		
+		<div id="secondarycontent">
+
+			<!-- secondary content start -->
+		
+			<h3>About Me</h3>
+			<div class="content">
+				<img src="assets/article.jpg" class="picB" alt="" />
+				<p>An article is a word that is used to indicate that a noun is a noun without describing it. For example, in the sentence Nick bought a dog, the article a indicates that the word dog is a noun. Articles can also modify anything that acts as a noun, such as a pronoun or a noun phrase.</p>
+			</div>
+			
+			<h3>Topics</h3>
+			<div class="content">
+				<ul class="linklist">
+					<li class="first"><a href="#">Theoretical Articles.</a></li>
+					<li><a href="#">Original Research Articles.</a></li>
+					<li><a href="#">Notes and News.</a></li>
+					<li><a href="#">Reviews.</a></li>
+					<li><a href="#">Educational Material.</a></li>
+					<li><a href="#">Reports and Studies of Observations.</a></li>
+					<li><a href="#">Authoritative Opinions.</a></li>
+					<li><a href="#">Descriptions of Research Methodology.</a></li>
+				</ul>
+			</div>
+
+			<!-- secondary content end -->
+
+		</div>
+	
+		<div id="footer">
+		
+			&copy; My Website. All rights reserved. Design by MaroPost</a>.
+		
+		</div>
+
+	</div>
+
+</div>
+  </body>
+</html>
